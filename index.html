@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grid_moma</title>
+<link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Calistoga', cursive;
+        }
+        h2{
+            font-size: 2.5em;
+            line-height: 1;
+            flex-grow: 1;
+        }
+        h3{
+            font-size: 0.9em;
+        }
+        .c2 img{
+            object-position: center;
+        }
+        .c3 img{
+            object-position: center;
+        }
+        .c6 img{
+            object-position: center;
+        }
+     .contenedor{
+         display: grid; 
+         grid-template-columns: repeat(5, 1fr);
+         grid-template-rows: 200px 200px 200px;    
+        }
+        .caja{
+            background: indianred;
+            border-radius: 0px;
+        }
+        .c1, .c4, .c5{
+            display: flex;
+            flex-direction: column;
+            padding: 1.3em; 2.3em;
+            grid-column: 2 span;
+        }
+        .c2, .c3, .c6{
+            grid-column: 3 span;
+        }
+        .c1{
+            background: #00AFD7;
+        }
+        .c4{
+            background: #FFCD00;
+        }
+         .c5{
+            background: black;
+            color: white;
+        }
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+   
+    
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja c1">
+         <h2>Un samurai ve el amanecer desde Acapulco</h2>
+         <h3>Sonia Pulido</h3></div>
+        <div class="caja c2">
+        <img src="img/17100106179_49097023bd_z.jpg" alt="">
+        </div>
+        <div class="caja c3">
+        <img src="img/malota-mar-hernandez.png" alt="">
+        </div>
+        <div class="caja c4">
+        <h2>Conociendo a la ilustradora Mar Hernández</h2>
+        <h3>Malota</h3>
+        </div>
+        <div class="caja c5">
+        <h2>Ilustraciones para la revista "Playtime"</h2>
+        <h3>Ana Galvañ</h3>
+        </div>
+        <div class="caja c6">
+        <img src="img/news_ana-galvan_header-1.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
